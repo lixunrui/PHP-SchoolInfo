@@ -1,0 +1,96 @@
+@import url("reset.css");
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url("../fonts/fertigo.css");
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: url(../images/bodybg.jpg) repeat;
+    font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+    color: #3b2f27;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.2em;
+    font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+}
+
+
+/*
+see here: https://www.w3schools.com/cssref/css_selectors.asp
+.class
+#id
+element
+element, element
+element>element
+element+element
+element1~element2
+*/
+
+#sitename {
+    font-weight: bold;
+    color: #124d2c;
+    text-shadow: #f5d18b 1px 1px 1px;
+    float: left;
+    padding: 9px 0 0 40px;
+}
+
+#sitename a:hover {
+    color: #052714;
+}
+
+#sitename a {
+    color: #124d2c;
+    text-decoration: none;
+}
+
+#sitename.logotext a {
+    display: block;
+    color: #5c1904;
+    text-shadow: #f1d8a4 1px 1px 1px;
+}
+
+#sitename.logotext a:hover {
+    columns: #e6ded5 !important;
+    text-shadow: #5f4d3b 1px 1px 1px!important;
+    text-decoration: none!important;
+}
+
+#sitename.logo a {
+    display: block;
+    background: url(images/memoirelogo.png) no-repeat;
+    height: 34px;
+    width: 217px;
+    text-indent: -4000px;
+    overflow: hidden;
+}
+
+#wrap {
+    width: 840px;
+    margin: auto;
+    background: url(images/wrapbg.png) center top no-repeat;
+    padding-top: 80px;
+    min-height: 100%;
+}
+
+#top {
+    background: url(images/pagebg.png) repeat-y;
+    height: 66px;
+    padding-top: 38px;
+}
+
+#mainnav ul {
+    height: 35px;
+    float: right;
+    padding-top: 13px;
+    padding-right: 40px;
+}
+
+#mainnav li {
+    display: inline;
+    font: bold 1.2em "Helvetica Neue", Helvetica, Verdana, sans-serif;
+    text-transform: uppercase;
+}
