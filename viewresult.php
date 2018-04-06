@@ -8,10 +8,10 @@
         <h2 class="sitedescription">...</h2>
     </header>
 
-    <section id="contents">
+    <!-- <section id="contents"> -->
         <article class="post">
             <header class="postheader">
-                <h2><a href="result.php">Student Registration No.</a></h2>
+                <h2><a href="#">Student Registration No.</a></h2>
             </header>
 
             <form action="result.php" method="post" name="form1">
@@ -61,7 +61,6 @@
                    
             </form>
 
-
             <form action="viewresult.php" name="form2" method="post">
                 <table>
                     <tr>
@@ -75,7 +74,6 @@
                     <?php 
                     if(isset($_POST['submitresult']))
                     {
-                       
                         $stmt2 = $con->prepare("SELECT * FROM  studentdetails WHERE (studfname LIKE :studFirstName OR studlname LIKE :studLastName) AND courseid=:selectCourseid");
     
                         $stmt2->bindParam(':studFirstName',$fname, PDO::PARAM_STR);
@@ -92,7 +90,6 @@
                         //$stmt2->setFetchMode(PDO::FETCH_ASSOC);    
                     }
                     
-  
                 if(isset($stmt2))
                 {
                     while($row = $stmt2->fetch(PDO::FETCH_ASSOC))
@@ -113,9 +110,10 @@
             </form>
             <p>&nbsp;</p>
         </article>
-    </section>
+    <!-- </section> -->
 
     <section id="sidebar">
+    <p>This is a side bar</p>
     </section>
 
     <section id="sidebar">

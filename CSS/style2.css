@@ -81,7 +81,7 @@ a:hover {
 
 #page {
     background: url('../images/pagebg.png') repeat-y;
-    padding: 0 40px;
+    padding: 40px;
 }
 
 #pageheader {

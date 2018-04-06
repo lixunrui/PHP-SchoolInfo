@@ -14,9 +14,9 @@
 
     $stmt->execute();
     
-   $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-   $results = $stmt->fetchAll();
+    $results = $stmt->fetchAll();
     foreach( $results as $result)
     {
         $regno = $result['studid'];
@@ -74,9 +74,7 @@
             <table width="483" height="96" border="1">
                 <tr>
                     <td width="141">Subject</td>
-                    <td width="67">Max Marks</td>
-                    <td width="97">Secord Marks</td>
-                    <td width="71">Result</td>
+                    <td width="67">Semester</td>
                     <td width="241">Comment</td>
                 </tr>
                 <tr>
@@ -91,9 +89,10 @@
                             foreach($queryResult as $result)
                             {
                                 echo "<tr>";
-                            echo "<td>&nbsp;". 1 ."</td>";
+                           
                             echo "<td>&nbsp". $result['subname'] ."</td>";
-                                echo "<td>&nbsp;". $result['studfname']." ". $result['studlname']."</td>";
+                                echo "<td>&nbsp;". $result['semester']."</td>";
+                                echo "<td>&nbsp;". $result['comment']."</td>";
                             }
                         }
                     ?>

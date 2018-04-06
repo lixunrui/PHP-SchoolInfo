@@ -23,7 +23,7 @@
     </head>
 
     <body>
-        <div id="wrap">
+        <div id="wrap"> <!-- Need a div at the footer -->
             <section id="top">
                 <nav id="mainnav">
                     <h1 id="sitename" class="logotext">
