@@ -15,7 +15,7 @@ if(isset($_SESSION['userid']))
 include("header.php");
 include("connection/connection.php");
 
-if(isset($_POST['uid'] && isset($_POST['pwd'])))
+if(isset($_POST['uid']) && isset($_POST['pwd']))
 {
     $query= $con->prepare("SELECT * FROM administrator WHERE adminid=?");
     $query->bingParam(1, $_POST['uid']);
